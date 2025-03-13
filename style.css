@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #060E1C;
+    overflow-x: hidden;
+}
+
+.header-container{
+    background-color: #03070e;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+}
+
+.header-container img{
+    width: 160px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: #d0e0fc;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #d0e0fc;
+}
+
+.menu a:hover{
+    color: #50B9FF;
+}
+
+.main-container{
+    background-color: #060e1c;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    color: #d0e0fc;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.container-projetos{
+    background-color: #03070e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.projetos{
+    background-color: #0a162b;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.projetos img{
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projetos img:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: .3s;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width:670px) {
+
+    .header-container img{
+        margin: auto;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .main-container{
+        padding: 20px;
+    }
+
+    .container-projetos{
+        justify-content: center;
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    .container-projetos::-webkit-scrollbar{
+        display: none;
+
+    }
+
+    .projetos{
+        width: 45%;
+        height: 140px;
+        border-radius: 8px;
+    }
+
+    .projetos img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
